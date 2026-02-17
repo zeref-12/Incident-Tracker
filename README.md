@@ -44,6 +44,7 @@ API overview
 | PATCH   | `/api/incidents/:id`  | Update an incident                  |
 
 Design decisions & tradeoffs
+
     Flask + SQLAlchemy + Marshmallow: Lightweight and fast to iterate with good control over DB and validation. Tradeoff: more manual wiring vs batteries‑included frameworks.
     Server-side pagination, filters, and search: Keeps memory usage low for large datasets and keeps sorting/filtering consistent. Tradeoff: requires careful SQL tuning on large tables (indexes).
     Marshmallow schemas for input validation: Centralized validation and clear error responses; slight runtime overhead but safer inputs.
@@ -53,6 +54,7 @@ Design decisions & tradeoffs
     Simple table row navigation (click → detail): Quick UX, but may need affordances to avoid accidental navigation (e.g., edit buttons).
 
 Improvements With More Time
+
     Authentication & Authorization: JWT or session login; restrict create/update endpoints.
     Docker & Deployment: Dockerfiles, docker‑compose for local setup, CI pipeline and a deployment manifest.
     Tests: Unit tests for backend routes and schemas; frontend unit tests + E2E tests (Cypress).
@@ -65,4 +67,5 @@ Improvements With More Time
     Observability: Logging, metrics, structured error reporting.
     Pagination controls & infinite scroll: More UX options depending on usage patterns.
     Schema & migrations: Add Alembic migration scripts and CI checks to run DB migrations automatically.
+
 
