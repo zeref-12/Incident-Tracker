@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Incident Tracker Mini App
 
 A full-stack incident management application built with **Flask** (Python), **PostgreSQL**, and **React**.
