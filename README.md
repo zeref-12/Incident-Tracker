@@ -1,10 +1,7 @@
 Incident Tracker — README.md
 A minimal full‑stack incident management app: Flask + SQLAlchemy backend and React (Vite) frontend.
 
-Quick Start
-
-Prereqs: Python 3.10+, Node.js 18+, PostgreSQL 14+.
-Clone & env: Clone repo and create a .env in backend if needed (DB URL / credentials).
+Versioning: Python 3.10+, Node.js 18+, PostgreSQL 14+.
 Backend:
    ``` 
     Create DB:psql -U postgres -c "CREATE DATABASE incident_tracker;"
@@ -70,6 +67,7 @@ Improvements With More Time
     Observability: Logging, metrics, structured error reporting.
     Pagination controls & infinite scroll: More UX options depending on usage patterns.
     Schema & migrations: Add Alembic migration scripts and CI checks to run DB migrations automatically.
+
 
 
 
