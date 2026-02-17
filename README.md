@@ -6,6 +6,7 @@ Quick Start
 Prereqs: Python 3.10+, Node.js 18+, PostgreSQL 14+.
 Clone & env: Clone repo and create a .env in backend if needed (DB URL / credentials).
 Backend:
+   ``` 
     Create DB:psql -U postgres -c "CREATE DATABASE incident_tracker;"
     From repo root:
     cd backend
@@ -15,11 +16,13 @@ Backend:
     pip install -r requirements.txt
     python seed.py          # creates tables & seeds sample data
     python app.py           # starts server on http://localhost:5000
-
+```
 Frontend:
+ ```
     cd frontend
     npm install
-    npm run dev  
+    npm run dev
+ ```
  
 Create the PostgreSQL database
 
@@ -67,5 +70,6 @@ Improvements With More Time
     Observability: Logging, metrics, structured error reporting.
     Pagination controls & infinite scroll: More UX options depending on usage patterns.
     Schema & migrations: Add Alembic migration scripts and CI checks to run DB migrations automatically.
+
 
 
